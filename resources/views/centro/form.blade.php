@@ -23,7 +23,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('estado') }}
-            {{ Form::text('estado', $centro->estado, ['class' => 'form-control' . ($errors->has('estado') ? ' is-invalid' : ''), 'placeholder' => 'Estado']) }}
+            {{ Form::select('estado',array("Activo"=>"Activo", "Inactivo"=>"Inactivo"), $centro->estado, ['class' => 'form-select' . ($errors->has('estado') ? ' is-invalid' : '')]) }}
             {!! $errors->first('estado', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 

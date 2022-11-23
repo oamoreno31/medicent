@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::resource('/centro',App\Http\Controllers\CentroController::class);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
